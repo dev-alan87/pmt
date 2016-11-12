@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Pocket Mental Test</string>
+    <string name="title_patients">Meus Pacientes</string>
+
+    <string name="default_text">nononon</string>
+    <string name="option_not_found">Opção não encontrada</string>
+
+    <string name="main_config">Configurações</string>
+    <string name="main_help">Ajuda</string>
+    <string-array name="main_options_items">
+        <item>MEUS PACIENTES</item>
+        <item>ADICIONAR TESTE</item>
+        <item>ADICIONAR EXAME</item>
+    </string-array>
+
+    <string name="patient_add">Adicionar novo</string>
+    <string name="patient_search">Procurar</string>
+    <string name="name">Nome</string>
+    <string name="address">Endereço</string>
+    <string name="birthday">Data de Nascimento (DD/MM/YYYY)</string>
+    <string name="schooling">Escolaridade</string>
+    <string name="sex">Sexo</string>
+    <string name="phone">Telefone</string>
+    <string name="save">Gravar</string>
+    <string name="sus_card">Número do SUS</string>
+
+
+</resources>
