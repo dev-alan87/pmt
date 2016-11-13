@@ -23,6 +23,35 @@
     <string name="phone">Telefone</string>
     <string name="save">Gravar</string>
     <string name="sus_card">Número do SUS</string>
-
+    <string name="patient_hint">Paciente...</string>
+    <string name="new_test_header">Selecione o tipo de teste que deseja aplicar ao paciente escolhido:</string>
+    <string name="teste_CDR">CDR (Avaliação Clínica de Demência)</string>
+    <string name="teste_RELOGIO">RELÓGIO (Teste do Relógio)</string>
+    <string name="teste_MEEM">MEEM (Mini Exame do Estado Mental)</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="avaliacao">Avaliação:</string>
+    <string name="cdr_intro_explanation">Entrevistar o paciente e avaliá-lo de acordo com os critérios abaixo:</string>
+    <string name="gravar_entrevista">Gravar Entrevista</string>
+    <string name="observacoes">Observações...</string>
+    <string name="anterior">Anterior</string>
+    <string name="proximo">Próximo</string>
+    <string name="paciente_label">Paciente:</string>
+    <string name="teste_label">Teste:</string>
+    <string name="data_label">Aplicado em:</string>
+    <string name="resultado_label">Resultado:</string>
+    <string name="detalhes">Detalhes:</string>
+    <string name="memoria_label">Memória CDR:</string>
+    <string name="orientation_label">Orientação CDR:</string>
+    <string name="problemsolving_label">Julgamento e solução de problemas CDR:</string>
+    <string name="comunidade_label">Assuntos na Comunidade CDR:</string>
+    <string name="lazer_label">Lazer e Atividades no Lar CDR:</string>
+    <string name="cuidadospess_label">Cuidados Pessoais CDR:</string>
+    <string name="cdr_result_success_1">Teste incluído com sucesso!</string>
+    <string name="cdr_result_success_2">Para consultar novamente, acesse os Testes do Paciente em Pacientes</string>
+    <string name="fechar">FECHAR</string>
+    <string name="avaliacao_atribuida">Avaliação atribuída:</string>
+    <string name="ouvir_entrevista">Ouvir entrevista</string>
+    <string name="observacoes_label">Observações:</string>
+    <string name="salvar_observacoes">Salvar Observações</string>
 
 </resources>
