@@ -53,5 +53,10 @@
     <string name="ouvir_entrevista">Ouvir entrevista</string>
     <string name="observacoes_label">Observações:</string>
     <string name="salvar_observacoes">Salvar Observações</string>
-
+    <string name="birthday_small">Nascido em</string>
+    <string name="sus_card_small">SUS</string>
+    <string name="add_test">Adicionar Teste</string>
+    <string name="patient_tests">Testes do Paciente</string>
+    <string name="patient_exams">Exames do Paciente</string>
+    <string name="patient_edit">Editar</string>
 </resources>

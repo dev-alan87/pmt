@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,8 +26,16 @@ public class PatientsList extends AppCompatActivity {
         loadListView();
     }
     private void loadListView() {
+        final PatientsList self = this;
         listView = (ListView)findViewById(R.id.patientslist_listview);
         listView.setAdapter(new PatientAdapter(this));
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(self, PatientDetails.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
