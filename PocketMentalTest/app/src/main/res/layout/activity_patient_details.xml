@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_patient_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.edu.ufabc.padm.pocketmentaltest.PatientDetails"
+    android:orientation="vertical">
+    <TableRow
+        android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_address_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address"/>
+    </TableRow>
+    <TableRow android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_small"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_birthday_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/birthday_small"/>
+    </TableRow>
+    <TableRow android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_schooling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/schooling"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_schooling_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/schooling" />
+    </TableRow>
+    <TableRow android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_sex_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"/>
+    </TableRow>
+    <TableRow android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_sus_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sus_card_small"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_sus_card_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sus_card"/>
+    </TableRow>
+    <TableRow android:background="@color/colorAccent"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/patient_details_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textStyle="bold"
+            android:paddingRight="15dp"/>
+        <TextView
+            android:id="@+id/patient_details_phone_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"/>
+    </TableRow>
+    <TableRow android:paddingTop="20dp"></TableRow>
+    <Button android:id="@+id/patient_details_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_tests"
+        />
+    <Button
+        android:id="@+id/patient_details_add_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/patient_exams"/>
+</TableLayout>

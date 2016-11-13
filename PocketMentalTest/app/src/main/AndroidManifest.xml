@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PatientsList" />
-        <activity android:name=".PatientPersist"></activity>
+        <activity android:name=".PatientPersist" />
+        <activity android:name=".PatientDetails"></activity>
     </application>
 
 </manifest>
