@@ -13,6 +13,11 @@
         <item>ADICIONAR EXAME</item>
     </string-array>
 
+    <string-array name="meem_calculus_question">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+
     <string name="patient_add">Adicionar novo</string>
     <string name="patient_search">Procurar</string>
     <string name="name">Nome</string>
@@ -59,4 +64,34 @@
     <string name="patient_tests">Testes do Paciente</string>
     <string name="patient_exams">Exames do Paciente</string>
     <string name="patient_edit">Editar</string>
+    <string name="meem_description">Selecione cada questão respondida corretamente pelo paciente</string>
+    <string name="meem_calculus_question">O paciente tem facilidade em operar contas?</string>
+    <string name="meem_ling1_imagem_checkbox">Paciente reconheceu objetos conforme apontado.</string>
+    <string name="meem_ling1_imagem_checkbox_inst">Clique no botão abaixo, aguarde as imagens aparecerem. Aponte cada um dos dois objetos da imagem e observe se o paciente os reconheceu conforme apontado.</string>
+    <string name="mostrar_imagem">Mostrar Imagem</string>
+    <string name="meem_ling1_frase_checkbox">Paciente repetiu a frase:</string>
+    <string name="meem_ling1_frase_checkbox_inst">\"Nem aqui, nem ali, nem lá.\"</string>
+    <string name="linguagem_parte_1">Linguagem (parte 1)</string>
+    <string name="meem_description2">Selecione cada questão respondida corretamente pelo paciente. Serão necessárias folhas, lápis e algum apoio (mesa) para essa fase</string>
+    <string name="linguagem_parte_2">Linguagem (parte 2)</string>
+    <string name="meem_ling2_comando">Paciente seguiu ao comando:</string>
+    <string name="meem_ling2_comando1">\"Pegue o papel com a mão direita\"</string>
+    <string name="meem_ling2_comando2">\"Dobre o papel ao meio\"</string>
+    <string name="meem_ling2_comando3">\"Coloque o papel na mesa\"</string>
+    <string name="meem_ling2_leucomando">Paciente leu e obedeceu ao comando:</string>
+    <string name="meem_ling2_comando_inst">Clique no botão abaixo, aguarde o comando ser exibido e mostre o aparelho ao paciente.</string>
+    <string name="mostrar_comando">Mostrar Comando</string>
+    <string name="meem_ling2_escreveufrase">Paciente escreveu uma frase de autoria:</string>
+    <string name="meem_ling2_escrita_inst">A frase deve conter sujeito, objeto e fazer sentido. Ignorar erros de ortografia!</string>
+    <string name="arquivar_frase_paciente">Arquivar frase do paciente (opcional)</string>
+    <string name="linguagem_parte_3">Linguagem (parte 3)</string>
+    <string name="meem_description3">Selecione se a ação foi executada corretamente. Serão necessários papel e lápis nesse estágio.</string>
+    <string name="meem_ling3_copiou">Paciente copiou o desenho corretamente.</string>
+    <string name="arquivar_desenho_paciente">Arquivar desenho do paciente (opcional)</string>
+    <string name="finalizar">Finalizar</string>
+    <string name="orientacaotemporal_label">Orientação Temporal Espacial:</string>
+    <string name="registros_label">Registros:</string>
+    <string name="calculo_label">Atenção e Cálculo:</string>
+    <string name="lembrancas_label">Lembranças:</string>
+    <string name="linguagem_label">Linguagem:</string>
 </resources>
