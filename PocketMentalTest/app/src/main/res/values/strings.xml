@@ -7,6 +7,7 @@
 
     <string name="main_config">Configurações</string>
     <string name="main_help">Ajuda</string>
+
     <string-array name="main_options_items">
         <item>MEUS PACIENTES</item>
         <item>ADICIONAR TESTE</item>
@@ -94,4 +95,44 @@
     <string name="calculo_label">Atenção e Cálculo:</string>
     <string name="lembrancas_label">Lembranças:</string>
     <string name="linguagem_label">Linguagem:</string>
+
+    <string name="create_table_query">
+        CREATE TABLE patients_list (
+            _id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nome TEXT NOT NULL,
+            endereco TEXT NOT NULL,
+            nascimento TEXT NOT NULL,
+            escolaridade INTEGER NOT NULL,
+            sexo INTEGER NOT NULL,
+            telefone TEXT NOT NULL,
+            sus TEXT NOT NULL
+        );
+        CREATE TABLE tests_results_list (
+            FOREIGN KEY(_patientid) REFERENCES patients_list(_id),
+            data TEXT NOT NULL,
+            score INTEGER NOT NULL,
+            teste TEXT NOT NULL
+        );
+    </string>
+    <string name="drop_table_query">
+        DROP TABLE IF EXISTS tests_results_list;
+        DROP TABLE IF EXISTS patients_list;
+    </string>
+    <string name="count_patients_query">
+        SELECT COUNT(*) AS count FROM patients_list;
+    </string>
+        <string name="list_patients_query">
+        SELECT * FROM patients_list;
+    </string>
+    <string name="insert_patient_query">
+        INSERT INTO patients_list
+            (nome, endereco, nascimento, escolaridade, sexo, telefone, sus)
+            VALUES(?,?,?,?,?,?,?);
+    </string>
+    <string name="insert_patientresult_query">
+        INSERT INTO patients_list
+            (nome, endereco, nascimento, escolaridade, sexo, telefone, sus)
+            VALUES(?,?,?,?,?,?,?);
+    </string>
+
 </resources>

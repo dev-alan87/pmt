@@ -1,15 +1,11 @@
 package br.edu.ufabc.padm.pocketmentaltest.model;
 
 import java.io.Serializable;
-import java.sql.Date;
-
-/**
- * Created by eadte on 11/11/2016.
- */
+import java.util.Date;
 
 public class Patient implements Serializable {
 
-    private int id;
+    private long id;
     private String name;
     private String address;
     private Date birthday;
@@ -18,10 +14,10 @@ public class Patient implements Serializable {
     private String susCard;
     private String phone;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
