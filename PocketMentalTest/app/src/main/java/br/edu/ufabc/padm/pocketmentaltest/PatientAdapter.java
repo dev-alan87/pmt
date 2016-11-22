@@ -22,7 +22,7 @@ public class PatientAdapter extends BaseAdapter {
 
     public PatientAdapter(Context c) {
         context = c;
-        dao = PatientDAO.getInstance();
+        dao = PatientDAO.newInstance(context);
     }
 
     @Override
@@ -32,7 +32,8 @@ public class PatientAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return dao.getAt(position);
+        //// TODO: pegar ID do paciente
+        return dao.getPatientById(position);
     }
 
     @Override
@@ -51,7 +52,8 @@ public class PatientAdapter extends BaseAdapter {
             convertView = inflater.inflate(R.layout.patients_list_item, null);
         name = (TextView) convertView.findViewById(R.id.pacient_item_name);
 
-        Patient p = dao.getAt(position);
+        //TODO: verificar se está pegando o Paciente
+        Patient p = (Patient) getItem(position);
         name.setText(p.getName());
 
         return convertView;
