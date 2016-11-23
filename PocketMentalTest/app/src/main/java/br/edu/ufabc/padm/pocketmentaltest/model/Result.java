@@ -8,9 +8,9 @@ import java.util.Date;
 
 public class Result {
     private long id;
-    private Date data;
+    private String data;
     private String teste;
-    private long score;
+    private double score;
 
 
     public long getId() {
@@ -20,10 +20,10 @@ public class Result {
         this.id = id;
     }
 
-    public Date getData() {
+    public String getData() {
         return data;
     }
-    public void setData(Date data) {
+    public void setData(String data) {
         this.data = data;
     }
 
@@ -34,10 +34,10 @@ public class Result {
         this.teste = teste;
     }
 
-    public long getScore() {
+    public double getScore() {
         return score;
     }
-    public void setScore(long score) {
+    public void setScore(double score) {
         this.score = score;
     }
 }

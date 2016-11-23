@@ -130,11 +130,12 @@
             VALUES(?,?,?,?,?,?,?);
     </string>
     <string name="insert_patientresult_query">
-        INSERT INTO patients_list
-            (nome, endereco, nascimento, escolaridade, sexo, telefone, sus)
-            VALUES(?,?,?,?,?,?,?);
+        INSERT INTO tests_results_list
+            (_patientid, data, score, teste)
+            VALUES(?,?,?,?);
     </string>
     <string name="new_patient">Novo paciente</string>
     <string name="edit_patient">Editar Paciente</string>
+    <string name="action_sendemail">Enviar Resultados</string>
 
 </resources>

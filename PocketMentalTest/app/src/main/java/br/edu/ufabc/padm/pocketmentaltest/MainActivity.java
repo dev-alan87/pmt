@@ -53,10 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 if(intent != null)
                     startActivity(intent);
                 else
-                    Toast.makeText(
-                            self,
-                            R.string.option_not_found,
-                            Toast.LENGTH_SHORT).show();
+                    Toast.makeText(self, R.string.option_not_found, Toast.LENGTH_SHORT).show();
             }
         });
     }

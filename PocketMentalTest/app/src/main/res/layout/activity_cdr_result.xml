@@ -24,7 +24,7 @@
                 android:textStyle="bold" />
             <TextView
                 android:id="@+id/cdr_result_test"
-                android:text="CDR #1 (Avaliação Clínica de Demência)"/>
+                android:text="CDR (Avaliação Clínica de Demência)"/>
         </TableRow>
         <TableRow>
             <TextView

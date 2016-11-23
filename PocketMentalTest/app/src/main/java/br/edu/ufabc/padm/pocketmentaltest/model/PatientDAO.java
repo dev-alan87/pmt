@@ -110,7 +110,7 @@ public class PatientDAO extends SQLiteOpenHelper {
         return patients;
     }
 
-    public Patient getPatientById(int id) {
+    public Patient getPatientById(long id) {
         String query = "SELECT * FROM patients_list WHERE _id =  " + id + ";";
         try {
             Cursor cursor = db.rawQuery(query, new String[]{});
@@ -195,8 +195,8 @@ public class PatientDAO extends SQLiteOpenHelper {
             while(!cursor.isAfterLast()) {
                 Result r = new Result();
                 r.setId(cursor.getLong(0));
-                r.setData(this.formatDateTime(cursor.getString(1)));
-                r.setScore(cursor.getLong(2));
+                r.setData(cursor.getString(1));
+                r.setScore(cursor.getDouble(2));
                 r.setTeste(cursor.getString(3));
                 results.add(r);
 
@@ -216,8 +216,8 @@ public class PatientDAO extends SQLiteOpenHelper {
         try {
             SQLiteStatement statement = db.compileStatement(queryStr);
             statement.bindLong(1, patient.getId());
-            statement.bindString(2, result.getData().toString());
-            statement.bindLong(3, result.getScore());
+            statement.bindString(2, result.getData());
+            statement.bindDouble(3, result.getScore());
             statement.bindString(4, result.getTeste());
 
             statement.execute();
@@ -240,7 +240,7 @@ public class PatientDAO extends SQLiteOpenHelper {
 
     // -- UTILS
     private Date formatDateTime(String timeToFormat) {
-        SimpleDateFormat iso8601Format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat iso8601Format = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date date = null;
         if (timeToFormat != null) {
             try {
