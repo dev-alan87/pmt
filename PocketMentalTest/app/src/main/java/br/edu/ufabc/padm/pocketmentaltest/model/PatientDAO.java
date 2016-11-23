@@ -18,7 +18,7 @@ import br.edu.ufabc.padm.pocketmentaltest.R;
 
 public class PatientDAO extends SQLiteOpenHelper {
 
-    private static PatientDAO dao; // make it singleton
+    private static PatientDAO dao;
     private Context context;
     private SQLiteDatabase db;
 
@@ -27,9 +27,9 @@ public class PatientDAO extends SQLiteOpenHelper {
 
     private static final String LOGTAG = PatientDAO.class.getName();
 
-    protected PatientDAO(Context c) {
+    private PatientDAO(Context c) {
         super(c, DB_NAME, null, DB_VERSION);
-        this.context = context;
+        this.context = c;
         this.db = getWritableDatabase();
     }
     public static PatientDAO newInstance(Context c) {
@@ -54,7 +54,6 @@ public class PatientDAO extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // simplified, only recreates table for now
         String queryStr = context.getString(R.string.drop_table_query);
 
         try {

@@ -134,5 +134,7 @@
             (nome, endereco, nascimento, escolaridade, sexo, telefone, sus)
             VALUES(?,?,?,?,?,?,?);
     </string>
+    <string name="new_patient">Novo paciente</string>
+    <string name="edit_patient">Editar Paciente</string>
 
 </resources>
